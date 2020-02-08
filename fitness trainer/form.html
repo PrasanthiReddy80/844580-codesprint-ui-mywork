@@ -1,0 +1,275 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> personal trainer appoientment form</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jO6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ 
+
+
+
+</head>
+  
+<body>
+<div class="container">
+    <div class="row ">
+        <div class="col">
+           <div class="card shadow-lg">
+               
+                <div class="card-body-lg bg-light">
+                    
+                     <form class="col">
+                     	  <div class="input-group">
+                               <h3 style="font-family: cursive;font-weight: bold"> Appointment Form</h3>
+                          </div>
+                      
+                       <div class="input-group mt-3 mb-3">
+                                    <div class="input-group-prepend ">
+                                       <span class="input-group-text">Name</span>
+                                    </div>
+                                    <input type="text"  autofocus="firstname" name="firstname"   pattern='[A-Za-z\\s]*' id="firstname"   placeholder="Firstname" required/> &nbsp;&nbsp;
+                                    <input type="text" name="lastname"  pattern='[A-Za-z\\s]*' id="lastname" placeholder="LastName" required/> 
+                        </div>
+
+                        <div class="input-group mt-3 mb-3">
+                        	 <div class="input-group-prepend">
+                        	 	 <span class=" input-group-text"> Age</span>
+                        	 </div>
+                        	    <input max="60" min="18" type="number" name="Age" id="Age" placeholder="age" required/> &nbsp;&nbsp;
+                        	
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Email</span>
+                          
+                            <input type="email" name="mail" id="mail" placeholder="Mail" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required/>
+                        </div> &nbsp; &nbsp;
+
+
+                         <div class="input-group-prepend" id="phone">
+
+                                <span class="input-group-text">+91</span>
+
+                                <input  type="text" id=" first" size="1" maxlength="1" />     
+								<input type="text" id=" second" size="1" maxlength="1" />
+								<input type="text" id=" third" size="1" maxlength="1" />
+								<input type="text" id="fourth" size="1" maxlength="1" /> 
+								<input type="text" id=" fifth" size="1" maxlength="1" />     
+								<input type="text" id=" sixth" size="1" maxlength="1" />
+								<input type="text" id=" seventh" size="1" maxlength="1"/>
+								<input type="text" id="eighth" size="1" maxlength="1" /> 
+								<input type="text" id=" ninth" size="1" maxlength="1" />
+								<input type="text" id="tenth" size="1" maxlength="1" />
+						</div>
+					</div>
+						<hr>
+                       <div>
+                      
+                      <fieldset class="border border-dark p-2">
+						 <legend  class=" w-auto"style="font-weight: bold;font-family: cursive;">Address</legend>
+
+		      
+
+						<div class="col">
+         
+			                  <input type="text" placeholder="Address" class="form-control" required/>
+			                  <label class="m-auto">Street address</label>
+			            </div>
+			            <br>
+
+                        <div class="row m-auto">
+                        	<div class="col-4">
+                        	
+
+                        	 <input type="text" placeholder="city"  class="form-control" required/>&nbsp;
+					         <label  class="m-auto">City</label>
+					          </div>
+
+						    <div  class="col-4">
+
+                        	 <input type="text" placeholder="State" class="form-control"  required/>
+                        	 <label class="m-auto">State</label>
+						   </div>
+
+					     	<div  class="col-4">
+		
+									<select id="Country">
+
+									  <option value="India">India</option>
+									  <option value="USA">USA</option>
+									  <option value="Germany">Germany</option>
+									  <option value="France">France</option>
+									</select><br>
+
+									<label class="m-auto">Country</label>
+						        </div>
+					   </div>   
+						    
+						     <div class="col">
+								<div class=" row">
+							    	<div class="col-4">			
+					     		    	<input  type=" text" class="form-control" placeholder="Pincode" pattern="[0-9]{6}" maxlength="6">
+					     			
+									   <label class="m-auto" > Pincode</label>
+								   </div>
+							  </div>
+							</div>
+					    </div>
+				 
+				 </fieldset>
+			
+					<hr>
+					<div>
+						 <h3 style="font-weight: bold;font-family: cursive;">Trainer Preference</h3>
+
+						</div>
+
+						<div>
+						  
+
+							<input type="radio" id="Male"     name="gender" value="male"> Male Trainer<br>
+							<input type="radio" id="FeMale"   name="gender" value="female"> Female Trainer<br>
+						    <input type="radio" id="None"     name="None"   value="Nopreference"> No preference<br>
+
+
+
+                          
+                            <input type="radio" id="Tname"    name="Trainername" value="Trainername"onclick="EnableDisableTextBox()" >Trainername   <input type="text" name="Trainername"  id=" Tn" disabled="disabled"/>
+                            
+						
+
+                              <input type="radio" name="Others"  id=" Others" value="other" onclick="EnableDisableTextBox()">Others <input type="text" id="Ot" name="Others" disabled="disabled"/>  
+				
+                        </div>
+						<br>
+                        <div>
+                        	<h3 style="font-weight: bold;font-family: cursive;">Do you need physiotherepist ?</h3>
+
+							<input type="radio" id="yes"  name="yes" value="yes"> yes
+
+							<input type="radio" id="no"   name="yes" value=" yes"> No
+
+                        </div>
+                        <hr>
+
+                        <div>
+                        	<h3 style="font-weight: bold;font-family: cursive;">Appointment : (free)</h3>
+
+                        </div>
+                        <hr>
+					<center>
+                        <table class="" border="1px" id="table">
+										  
+										  <tr>
+										    <td scope="col" style="text-align: center;">Day </td>
+										    <th scope="col">7:00am to 9:00am</th>
+										    <th scope="col">9:00 am to 11:00am</th>
+										    <th scope="col">11:00am to 1:00pm</th>
+										    <th scope="col">1:00pm to 3:00pm</th>
+										    <th scope="col">3:00pm to5:00pm</th>
+										  </tr>
+										  <tr  style="text-align: center;">
+										    <th scope="row"> Monday</th>
+										    <td><input type="radio" id="1" name="1" value="1">1</td>
+										    <td><input type="radio" id="2" name="1" value="1">2</td>
+										    <td><input type="radio" id="3" name="1" value="1">3</td>
+										    <td><input type="radio" id="4" name="1" value="1">4</td>
+										    <td><input type="radio" id="5" name="1" value="1">5</td>
+										  </tr>
+										  <tr style="text-align: center;">
+										    <th scope="row"> Tuseday</th>
+										    <td><input type="radio" id="6" name="1" value="1">1</td>
+										    <td><input type="radio" id="7" name="1" value="1">2</td>
+										    <td><input type="radio" id="8" name="1" value="1">3</td>
+										    <td><input type="radio" id="9" name="1" value="1">4</td>
+										    <td><input type="radio" id="10" name="1" value="1">5</td>
+										  </tr>
+										  <tr style="text-align: center;">
+										    <th scope="row"> Wedneseday</th>
+										    <td><input type="radio" id="11" name="1" value="1">1</td>
+										    <td><input type="radio" id="12" name="1" value="1">2</td>
+										    <td><input type="radio" id="13" name="1" value="1">3</td>
+										    <td><input type="radio" id="14" name="1" value="1">4</td>
+										    <td><input type="radio" id="15" name="1" value="1">5</td>
+										  </tr>
+										  <tr style="text-align: center;">
+										    <th scope="row">Thursday</th>
+										    <td><input type="radio" id="16" name="1" value="1">1</td>
+										    <td><input type="radio" id="17" name="1" value="1">2</td>
+										    <td><input type="radio" id="18" name="1" value="1">3</td>
+										    <td><input type="radio" id="19" name="1" value="1">4</td>
+										    <td><input type="radio" id="20" name="1" value="1">5</td>
+										  </tr>
+										  <tr style="text-align: center;">
+										    <th scope="row"> Friday</th>
+										    <td><input type="radio" id="21" name="1" value="1">1</td>
+										    <td><input type="radio" id="22" name="1" value="1">2</td>
+										    <td><input type="radio" id="23" name="1" value="1">3</td>
+										    <td><input type="radio" id="24" name="1" value="1">4</td>
+										    <td><input type="radio" id="25" name="1" value="1">5</td>
+										  </tr>
+										  <tr style="text-align: center;">
+										    <th scope="row"> Saturday</th>
+										    <td><input type="radio" id="26" name="1" value="1">1</td>
+										    <td><input type="radio" id="27" name="1" value="1">2</td>
+										    <td><input type="radio" id="28" name="1" value="1">3</td>
+										    <td><input type="radio" id="29" name="1" value="1">4</td>
+										    <td><input type="radio" id="30" name="1" value="1">5</td>
+										  </tr>
+										  <tr style="text-align: center;">
+										    <th scope="row"> sunday</th>
+										    <td><input type="radio" id="31" name="1" value="1">1</td>
+										    <td><input type="radio" id="32" name="1" value="1">2</td>
+										    <td><input type="radio" id="33" name="1" value="1">3</td>
+										    <td><input type="radio" id="34" name="1" value="1">4</td>
+										    <td><input type="radio" id="35" name="1" value="1">5</td>
+										  </tr>
+										 
+						</table>
+					
+			    	</center>
+				 <hr>
+
+				 <div>
+				 	<h3 style="font-weight: bold;font-family: cursive;">Select a package: </h3>
+				 </div>
+                     <div class="text-align">
+							<input type="radio" id=""         name="cost"   value="500">one time assesment only RS.500<br>
+							<input type="radio" id="FeMale"   name="cost"   value="400">4 weekly sesion es.400/session<br>
+						    <input type="radio" id="None"     name="cost"   value="300"> 12 weekly session rs.300 <br>                                   	
+							<input type="radio" name="cost" value=" ">others<input  class=" form-control col-4"type="text" name="cost" id="empty "><label> Quote will be shared on phone call</label>
+                     
+                
+              <div class="row">
+				<div class="col">
+					 <div class="col-4">		
+                  Quote:  <input type="text" name="cost" id=" cost1" value=" " size="3" readonly="readonly">
+                  <label >INR</label>.
+
+                  <input type="text" name="cost" id=" cost2" value="" size="3" readonly="readonly">
+                  <label >Paise</label>
+            </div>
+        </div>
+    </div>
+</div>
+          <input type="submit" name=" submit" disabled="disabled" id="" >
+</div>
+
+</form>
+
+
+
+                   
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+</body>
+</html>
